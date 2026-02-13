@@ -1,0 +1,497 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>QuantZero Backtest Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; }
+    .grid { display:grid; grid-template-columns: repeat(4, minmax(180px,1fr)); gap:12px; margin-bottom: 16px; }
+    .card { border:1px solid #ddd; border-radius:10px; padding:12px; }
+    h1,h2 { margin: 8px 0; }
+    table { border-collapse: collapse; width:100%; font-size: 13px; }
+    th, td { border:1px solid #ddd; padding:6px 8px; }
+    th { background:#f7f7f7; }
+  </style>
+</head>
+<body>
+  <h1>QuantZero Backtest Report</h1>
+  <div class="grid">
+    <div class="card"><b>Trades</b><br>42</div>
+    <div class="card"><b>Win rate</b><br>40.48%</div>
+    <div class="card"><b>Total return</b><br>9.79%</div>
+    <div class="card"><b>Avg trade</b><br>0.234%</div>
+    <div class="card"><b>Best trade</b><br>6.352%</div>
+    <div class="card"><b>Worst trade</b><br>-1.084%</div>
+    <div class="card"><b>Max drawdown</b><br>-5.46%</div>
+    <div class="card"><b>Profit factor</b><br>1.6246893699642977</div>
+  </div>
+
+  <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.1.min.js" integrity="sha256-4rD3fugVb/nVJYUv5Ky3v+fYXoouHaBSP20WIJuEiWg=" crossorigin="anonymous"></script>                <div id="95233717-f52a-43c3-afa1-b4fbf7c34c80" class="plotly-graph-div" style="height:950px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("95233717-f52a-43c3-afa1-b4fbf7c34c80")) {                    Plotly.newPlot(                        "95233717-f52a-43c3-afa1-b4fbf7c34c80",                        [{"mode":"lines","name":"Equity","x":["2026-01-16T01:10:00.000000","2026-01-16T17:55:00.000000","2026-01-17T16:45:00.000000","2026-01-20T22:00:00.000000","2026-01-21T11:50:00.000000","2026-01-21T12:10:00.000000","2026-01-21T12:15:00.000000","2026-01-21T19:25:00.000000","2026-01-22T12:40:00.000000","2026-01-25T10:20:00.000000","2026-01-25T18:10:00.000000","2026-01-27T12:45:00.000000","2026-01-29T17:15:00.000000","2026-02-01T23:40:00.000000","2026-02-02T09:50:00.000000","2026-02-02T14:35:00.000000","2026-02-02T14:40:00.000000","2026-02-02T15:20:00.000000","2026-02-02T15:35:00.000000","2026-02-03T20:55:00.000000","2026-02-04T06:40:00.000000","2026-02-04T18:35:00.000000","2026-02-04T18:40:00.000000","2026-02-04T19:40:00.000000","2026-02-05T12:20:00.000000","2026-02-05T14:00:00.000000","2026-02-05T22:50:00.000000","2026-02-05T23:00:00.000000","2026-02-06T04:50:00.000000","2026-02-06T09:25:00.000000","2026-02-06T16:15:00.000000","2026-02-06T16:20:00.000000","2026-02-06T17:40:00.000000","2026-02-06T21:05:00.000000","2026-02-07T12:25:00.000000","2026-02-08T08:30:00.000000","2026-02-09T13:30:00.000000","2026-02-10T11:50:00.000000","2026-02-10T11:55:00.000000","2026-02-11T11:20:00.000000","2026-02-11T14:10:00.000000","2026-02-11T14:15:00.000000"],"y":{"dtype":"f8","bdata":"jg5p7ib07z8st5TBWsvvP4bI99Tpxe8\u002fhTK5LPrm7z+vOSjkLcXvPyFqh3rs6+8\u002f4NOWiXIJ8D\u002fB4TzOTdfvP1FJpLzewu8\u002f8cyWuyew7z\u002f83EdpPJPvP6sKo72cge8\u002fWKLQ+EHc7z8cUlNpipPvPzK+f38xTe8\u002f8quaPqYb7z8L3OjnKfDuP1gm3rHB9+4\u002frMZCDB8P7z9l5Bxy3WPvP69aKy4sfO8\u002fd\u002fr5rxS17z9oOqxahw\u002fwP9p3Eikb2+8\u002fveFUuggi8D+6Ldg5MgTwP3FlrAegCPE\u002fjNKEGg4G8j\u002fvUSfGS9vxP5gpbVGltfE\u002ffE2Ng6WL8T\u002fadLXW7mLxP\u002feu74k8lvE\u002fQIRse7Lg8T+zwlRmFa\u002fxP9HogKxPovE\u002fF5HdURV78T8bndbRhkvxP08Yad+6HvE\u002fi\u002f1hsvUJ8T+JvDT7\u002fk3xP7Bdy2ADkfE\u002f"},"type":"scatter","xaxis":"x","yaxis":"y"},{"mode":"lines","name":"Drawdown %","x":["2026-01-16T01:10:00.000000","2026-01-16T17:55:00.000000","2026-01-17T16:45:00.000000","2026-01-20T22:00:00.000000","2026-01-21T11:50:00.000000","2026-01-21T12:10:00.000000","2026-01-21T12:15:00.000000","2026-01-21T19:25:00.000000","2026-01-22T12:40:00.000000","2026-01-25T10:20:00.000000","2026-01-25T18:10:00.000000","2026-01-27T12:45:00.000000","2026-01-29T17:15:00.000000","2026-02-01T23:40:00.000000","2026-02-02T09:50:00.000000","2026-02-02T14:35:00.000000","2026-02-02T14:40:00.000000","2026-02-02T15:20:00.000000","2026-02-02T15:35:00.000000","2026-02-03T20:55:00.000000","2026-02-04T06:40:00.000000","2026-02-04T18:35:00.000000","2026-02-04T18:40:00.000000","2026-02-04T19:40:00.000000","2026-02-05T12:20:00.000000","2026-02-05T14:00:00.000000","2026-02-05T22:50:00.000000","2026-02-05T23:00:00.000000","2026-02-06T04:50:00.000000","2026-02-06T09:25:00.000000","2026-02-06T16:15:00.000000","2026-02-06T16:20:00.000000","2026-02-06T17:40:00.000000","2026-02-06T21:05:00.000000","2026-02-07T12:25:00.000000","2026-02-08T08:30:00.000000","2026-02-09T13:30:00.000000","2026-02-10T11:50:00.000000","2026-02-10T11:55:00.000000","2026-02-11T11:20:00.000000","2026-02-11T14:10:00.000000","2026-02-11T14:15:00.000000"],"y":{"dtype":"f8","bdata":"AAAAAAAAAACwDEtwVOvfv7R\u002f1mSQFuK\u002foBdSpJCdxL983nOuFWDiv+ByH+AywLm\u002fAAAAAAAAAADAJE5nYDnnv+iRT4IPMO+\u002fHLuwtZ4987+sWJ32QOD4v4C6imBpT\u002fy\u002fLNHVmSNL5b8ks+PtDdH4v358UcApQwPAdQ6nbOkWCMBxyUBzjVMMwCboqo0qlgvAWWfj1GRPCcDB70L1rA0BwHJFvSvFXv2\u002f8lsFEOhH8r8AAAAAAAAAAADm5bZ4ceq\u002fAAAAAAAAAACYN8QpZx7nvwAAAAAAAAAAAAAAAAAAAAAkXxFcpKftv\u002fh5U34d4vu\u002ffKNsnD05BcCu0Am3W0gMwH9cC7wxYwPAvAXILLDo6b8cU\u002f2apyj+v+VoCj8+SwHA7gszX2sYCMAGJOIXoysQwJqUz+zPDRTA7xStU8TaFcBrS5j8qukPwMeDAxwJSwTA"},"type":"scatter","xaxis":"x2","yaxis":"y2"},{"marker":{"color":["#dc2626","#dc2626","#dc2626","#16a34a","#dc2626","#16a34a","#16a34a","#dc2626","#dc2626","#dc2626","#dc2626","#dc2626","#16a34a","#dc2626","#dc2626","#dc2626","#dc2626","#16a34a","#16a34a","#16a34a","#16a34a","#16a34a","#16a34a","#dc2626","#16a34a","#dc2626","#16a34a","#16a34a","#dc2626","#dc2626","#dc2626","#dc2626","#16a34a","#16a34a","#dc2626","#dc2626","#dc2626","#dc2626","#dc2626","#dc2626","#16a34a","#16a34a"]},"name":"Trade %","x":["2026-01-16T01:10:00.000000","2026-01-16T17:55:00.000000","2026-01-17T16:45:00.000000","2026-01-20T22:00:00.000000","2026-01-21T11:50:00.000000","2026-01-21T12:10:00.000000","2026-01-21T12:15:00.000000","2026-01-21T19:25:00.000000","2026-01-22T12:40:00.000000","2026-01-25T10:20:00.000000","2026-01-25T18:10:00.000000","2026-01-27T12:45:00.000000","2026-01-29T17:15:00.000000","2026-02-01T23:40:00.000000","2026-02-02T09:50:00.000000","2026-02-02T14:35:00.000000","2026-02-02T14:40:00.000000","2026-02-02T15:20:00.000000","2026-02-02T15:35:00.000000","2026-02-03T20:55:00.000000","2026-02-04T06:40:00.000000","2026-02-04T18:35:00.000000","2026-02-04T18:40:00.000000","2026-02-04T19:40:00.000000","2026-02-05T12:20:00.000000","2026-02-05T14:00:00.000000","2026-02-05T22:50:00.000000","2026-02-05T23:00:00.000000","2026-02-06T04:50:00.000000","2026-02-06T09:25:00.000000","2026-02-06T16:15:00.000000","2026-02-06T16:20:00.000000","2026-02-06T17:40:00.000000","2026-02-06T21:05:00.000000","2026-02-07T12:25:00.000000","2026-02-08T08:30:00.000000","2026-02-09T13:30:00.000000","2026-02-10T11:50:00.000000","2026-02-10T11:55:00.000000","2026-02-11T11:20:00.000000","2026-02-11T14:10:00.000000","2026-02-11T14:15:00.000000"],"y":{"dtype":"f8","bdata":"e0HZeyuDwr+UDEtwVOvfvzGPZPsKHbG\u002fbu\u002ff0P0D2j8YtfqgTnzavzhO\u002fxvwfN4\u002fYXOhOl2F3j\u002fbJE5nYDnnv875pg4tC9C\u002fMDrgojl2zb\u002fdWT\u002foxdDWvwYiIupW6Mu\u002fL2ElzEr78T9kS7a\u002fkYfsv7IfX3Ie2eu\u002fBDkezfLI47\u002fwb7bcQnnhvz+eLPzSirg\u002fJGhkBLDc0j+mKvZpjQ3xP6OstCz4W9M\u002fIbVlGOaX5j\u002fD7u1OveP0P+fl5bZ4ceq\u002fSW6929iX9D92N8QpZx7nvyBV2lQPaBlAZu38eUM\u002fF0CxXxFcpKftv0NcCmcdW+q\u002fpr\u002fYXfyk7b+lo1jVdgHtvwOdvUo9cfI\u002fcLgZjTZ2+j+z8CLqQljxv+dygMp0DtK\u002fi5KNKpfO67\u002fJGE8Z0ADxv08hx2g8MPC\u002fiqM4yIxU3r9xQxnYyvT4P4PrWmVyNPg\u002f"},"type":"bar","xaxis":"x3","yaxis":"y3"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"matches":"x3","showticklabels":false},"yaxis":{"anchor":"x","domain":[0.604,1.0],"title":{"text":"Equity"}},"xaxis2":{"anchor":"y2","domain":[0.0,1.0],"matches":"x3","showticklabels":false},"yaxis2":{"anchor":"x2","domain":[0.324,0.544],"title":{"text":"%"}},"xaxis3":{"anchor":"y3","domain":[0.0,1.0]},"yaxis3":{"anchor":"x3","domain":[0.0,0.264],"title":{"text":"%"}},"annotations":[{"font":{"size":16},"showarrow":false,"text":"Equity Curve","x":0.5,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"Drawdown %","x":0.5,"xanchor":"center","xref":"paper","y":0.544,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"Trade Return %","x":0.5,"xanchor":"center","xref":"paper","y":0.264,"yanchor":"bottom","yref":"paper"}],"height":950,"title":{"text":"Backtest Report"}},                        {"responsive": true}                    )                };            </script>        </div>
+
+  <h2>Monthly Summary</h2>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>month</th>
+      <th>trades</th>
+      <th>win_rate_pct</th>
+      <th>sum_return_pct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2026-01</td>
+      <td>13</td>
+      <td>30.769231</td>
+      <td>-0.421570</td>
+    </tr>
+    <tr>
+      <td>2026-02</td>
+      <td>29</td>
+      <td>44.827586</td>
+      <td>10.258439</td>
+    </tr>
+  </tbody>
+</table>
+
+  <h2>Trades</h2>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>entry_time</th>
+      <th>side</th>
+      <th>entry_price</th>
+      <th>exit_time</th>
+      <th>exit_price</th>
+      <th>exit_reason</th>
+      <th>meta_prob</th>
+      <th>pnl_pct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2026-01-16 01:10:00+00:00</td>
+      <td>LONG</td>
+      <td>95419.9</td>
+      <td>2026-01-16 04:10:00+00:00</td>
+      <td>95396.4000</td>
+      <td>timeout</td>
+      <td>0.6074</td>
+      <td>-0.1446</td>
+    </tr>
+    <tr>
+      <td>2026-01-16 17:55:00+00:00</td>
+      <td>SHORT</td>
+      <td>95083.7</td>
+      <td>2026-01-16 20:55:00+00:00</td>
+      <td>95443.8185</td>
+      <td>stop_loss</td>
+      <td>0.6539</td>
+      <td>-0.4987</td>
+    </tr>
+    <tr>
+      <td>2026-01-17 16:45:00+00:00</td>
+      <td>LONG</td>
+      <td>95201.2</td>
+      <td>2026-01-17 19:45:00+00:00</td>
+      <td>95251.8000</td>
+      <td>timeout</td>
+      <td>0.6529</td>
+      <td>-0.0668</td>
+    </tr>
+    <tr>
+      <td>2026-01-20 22:00:00+00:00</td>
+      <td>SHORT</td>
+      <td>89525.7</td>
+      <td>2026-01-20 22:30:00+00:00</td>
+      <td>89054.3529</td>
+      <td>take_profit</td>
+      <td>0.6076</td>
+      <td>0.4065</td>
+    </tr>
+    <tr>
+      <td>2026-01-21 11:50:00+00:00</td>
+      <td>LONG</td>
+      <td>88957.2</td>
+      <td>2026-01-21 11:55:00+00:00</td>
+      <td>88695.8107</td>
+      <td>stop_loss</td>
+      <td>0.6077</td>
+      <td>-0.4138</td>
+    </tr>
+    <tr>
+      <td>2026-01-21 12:10:00+00:00</td>
+      <td>LONG</td>
+      <td>88259.3</td>
+      <td>2026-01-21 12:50:00+00:00</td>
+      <td>88785.6569</td>
+      <td>take_profit</td>
+      <td>0.6109</td>
+      <td>0.4764</td>
+    </tr>
+    <tr>
+      <td>2026-01-21 12:15:00+00:00</td>
+      <td>LONG</td>
+      <td>88316.6</td>
+      <td>2026-01-21 12:50:00+00:00</td>
+      <td>88843.7529</td>
+      <td>take_profit</td>
+      <td>0.6212</td>
+      <td>0.4769</td>
+    </tr>
+    <tr>
+      <td>2026-01-21 19:25:00+00:00</td>
+      <td>SHORT</td>
+      <td>89622.1</td>
+      <td>2026-01-21 19:45:00+00:00</td>
+      <td>90164.9894</td>
+      <td>stop_loss</td>
+      <td>0.6000</td>
+      <td>-0.7258</td>
+    </tr>
+    <tr>
+      <td>2026-01-22 12:40:00+00:00</td>
+      <td>SHORT</td>
+      <td>90009.9</td>
+      <td>2026-01-22 13:25:00+00:00</td>
+      <td>90127.5269</td>
+      <td>stop_loss</td>
+      <td>0.6025</td>
+      <td>-0.2507</td>
+    </tr>
+    <tr>
+      <td>2026-01-25 10:20:00+00:00</td>
+      <td>SHORT</td>
+      <td>88569.9</td>
+      <td>2026-01-25 12:25:00+00:00</td>
+      <td>88667.4779</td>
+      <td>stop_loss</td>
+      <td>0.6143</td>
+      <td>-0.2302</td>
+    </tr>
+    <tr>
+      <td>2026-01-25 18:10:00+00:00</td>
+      <td>LONG</td>
+      <td>87672.5</td>
+      <td>2026-01-25 18:25:00+00:00</td>
+      <td>87465.1611</td>
+      <td>stop_loss</td>
+      <td>0.6041</td>
+      <td>-0.3565</td>
+    </tr>
+    <tr>
+      <td>2026-01-27 12:45:00+00:00</td>
+      <td>LONG</td>
+      <td>87956.4</td>
+      <td>2026-01-27 13:15:00+00:00</td>
+      <td>87870.1782</td>
+      <td>stop_loss</td>
+      <td>0.6179</td>
+      <td>-0.2180</td>
+    </tr>
+    <tr>
+      <td>2026-01-29 17:15:00+00:00</td>
+      <td>SHORT</td>
+      <td>85506.9</td>
+      <td>2026-01-29 17:25:00+00:00</td>
+      <td>84443.3219</td>
+      <td>take_profit</td>
+      <td>0.6225</td>
+      <td>1.1239</td>
+    </tr>
+    <tr>
+      <td>2026-02-01 23:40:00+00:00</td>
+      <td>LONG</td>
+      <td>77310.0</td>
+      <td>2026-02-02 00:00:00+00:00</td>
+      <td>76713.5155</td>
+      <td>stop_loss</td>
+      <td>0.7330</td>
+      <td>-0.8915</td>
+    </tr>
+    <tr>
+      <td>2026-02-02 09:50:00+00:00</td>
+      <td>SHORT</td>
+      <td>77634.9</td>
+      <td>2026-02-02 12:25:00+00:00</td>
+      <td>78217.3588</td>
+      <td>stop_loss</td>
+      <td>0.6342</td>
+      <td>-0.8703</td>
+    </tr>
+    <tr>
+      <td>2026-02-02 14:35:00+00:00</td>
+      <td>SHORT</td>
+      <td>78510.1</td>
+      <td>2026-02-02 17:35:00+00:00</td>
+      <td>78901.3000</td>
+      <td>timeout</td>
+      <td>0.8230</td>
+      <td>-0.6183</td>
+    </tr>
+    <tr>
+      <td>2026-02-02 14:40:00+00:00</td>
+      <td>SHORT</td>
+      <td>78488.0</td>
+      <td>2026-02-02 17:40:00+00:00</td>
+      <td>78822.4000</td>
+      <td>timeout</td>
+      <td>0.7986</td>
+      <td>-0.5461</td>
+    </tr>
+    <tr>
+      <td>2026-02-02 15:20:00+00:00</td>
+      <td>SHORT</td>
+      <td>78705.4</td>
+      <td>2026-02-02 18:20:00+00:00</td>
+      <td>78535.5000</td>
+      <td>timeout</td>
+      <td>0.8389</td>
+      <td>0.0959</td>
+    </tr>
+    <tr>
+      <td>2026-02-02 15:35:00+00:00</td>
+      <td>SHORT</td>
+      <td>78969.0</td>
+      <td>2026-02-02 18:35:00+00:00</td>
+      <td>78641.5000</td>
+      <td>timeout</td>
+      <td>0.6972</td>
+      <td>0.2947</td>
+    </tr>
+    <tr>
+      <td>2026-02-03 20:55:00+00:00</td>
+      <td>SHORT</td>
+      <td>76521.9</td>
+      <td>2026-02-03 22:15:00+00:00</td>
+      <td>75614.4967</td>
+      <td>take_profit</td>
+      <td>0.6546</td>
+      <td>1.0658</td>
+    </tr>
+    <tr>
+      <td>2026-02-04 06:40:00+00:00</td>
+      <td>SHORT</td>
+      <td>76682.5</td>
+      <td>2026-02-04 07:05:00+00:00</td>
+      <td>76358.5254</td>
+      <td>take_profit</td>
+      <td>0.6213</td>
+      <td>0.3025</td>
+    </tr>
+    <tr>
+      <td>2026-02-04 18:35:00+00:00</td>
+      <td>SHORT</td>
+      <td>73858.2</td>
+      <td>2026-02-04 21:35:00+00:00</td>
+      <td>73248.1000</td>
+      <td>timeout</td>
+      <td>0.7141</td>
+      <td>0.7060</td>
+    </tr>
+    <tr>
+      <td>2026-02-04 18:40:00+00:00</td>
+      <td>SHORT</td>
+      <td>73996.4</td>
+      <td>2026-02-04 21:40:00+00:00</td>
+      <td>72941.5070</td>
+      <td>take_profit</td>
+      <td>0.7740</td>
+      <td>1.3056</td>
+    </tr>
+    <tr>
+      <td>2026-02-04 19:40:00+00:00</td>
+      <td>LONG</td>
+      <td>73577.9</td>
+      <td>2026-02-04 21:40:00+00:00</td>
+      <td>73058.1814</td>
+      <td>stop_loss</td>
+      <td>0.6731</td>
+      <td>-0.8264</td>
+    </tr>
+    <tr>
+      <td>2026-02-05 12:20:00+00:00</td>
+      <td>LONG</td>
+      <td>69208.3</td>
+      <td>2026-02-05 14:00:00+00:00</td>
+      <td>70182.1106</td>
+      <td>take_profit</td>
+      <td>0.6397</td>
+      <td>1.2871</td>
+    </tr>
+    <tr>
+      <td>2026-02-05 14:00:00+00:00</td>
+      <td>SHORT</td>
+      <td>70084.2</td>
+      <td>2026-02-05 14:35:00+00:00</td>
+      <td>70506.4302</td>
+      <td>stop_loss</td>
+      <td>0.6222</td>
+      <td>-0.7225</td>
+    </tr>
+    <tr>
+      <td>2026-02-05 22:50:00+00:00</td>
+      <td>SHORT</td>
+      <td>64418.5</td>
+      <td>2026-02-06 00:10:00+00:00</td>
+      <td>60249.5788</td>
+      <td>take_profit</td>
+      <td>0.6192</td>
+      <td>6.3516</td>
+    </tr>
+    <tr>
+      <td>2026-02-05 23:00:00+00:00</td>
+      <td>SHORT</td>
+      <td>64736.7</td>
+      <td>2026-02-06 00:10:00+00:00</td>
+      <td>60896.6608</td>
+      <td>take_profit</td>
+      <td>0.7259</td>
+      <td>5.8118</td>
+    </tr>
+    <tr>
+      <td>2026-02-06 04:50:00+00:00</td>
+      <td>SHORT</td>
+      <td>64836.3</td>
+      <td>2026-02-06 05:05:00+00:00</td>
+      <td>65359.3436</td>
+      <td>stop_loss</td>
+      <td>0.6103</td>
+      <td>-0.9267</td>
+    </tr>
+    <tr>
+      <td>2026-02-06 09:25:00+00:00</td>
+      <td>SHORT</td>
+      <td>65589.6</td>
+      <td>2026-02-06 09:50:00+00:00</td>
+      <td>66051.1031</td>
+      <td>stop_loss</td>
+      <td>0.6268</td>
+      <td>-0.8236</td>
+    </tr>
+    <tr>
+      <td>2026-02-06 16:15:00+00:00</td>
+      <td>SHORT</td>
+      <td>69533.3</td>
+      <td>2026-02-06 16:50:00+00:00</td>
+      <td>70094.0095</td>
+      <td>stop_loss</td>
+      <td>0.7723</td>
+      <td>-0.9264</td>
+    </tr>
+    <tr>
+      <td>2026-02-06 16:20:00+00:00</td>
+      <td>SHORT</td>
+      <td>69577.4</td>
+      <td>2026-02-06 16:50:00+00:00</td>
+      <td>70124.5767</td>
+      <td>stop_loss</td>
+      <td>0.7900</td>
+      <td>-0.9064</td>
+    </tr>
+    <tr>
+      <td>2026-02-06 17:40:00+00:00</td>
+      <td>SHORT</td>
+      <td>71016.8</td>
+      <td>2026-02-06 18:05:00+00:00</td>
+      <td>70113.0073</td>
+      <td>take_profit</td>
+      <td>0.6071</td>
+      <td>1.1526</td>
+    </tr>
+    <tr>
+      <td>2026-02-06 21:05:00+00:00</td>
+      <td>LONG</td>
+      <td>69918.0</td>
+      <td>2026-02-06 22:35:00+00:00</td>
+      <td>71158.2479</td>
+      <td>take_profit</td>
+      <td>0.6259</td>
+      <td>1.6539</td>
+    </tr>
+    <tr>
+      <td>2026-02-07 12:25:00+00:00</td>
+      <td>LONG</td>
+      <td>69330.0</td>
+      <td>2026-02-07 14:35:00+00:00</td>
+      <td>68661.6254</td>
+      <td>stop_loss</td>
+      <td>0.6038</td>
+      <td>-1.0840</td>
+    </tr>
+    <tr>
+      <td>2026-02-08 08:30:00+00:00</td>
+      <td>SHORT</td>
+      <td>70683.0</td>
+      <td>2026-02-08 11:30:00+00:00</td>
+      <td>70797.6000</td>
+      <td>timeout</td>
+      <td>0.6014</td>
+      <td>-0.2821</td>
+    </tr>
+    <tr>
+      <td>2026-02-09 13:30:00+00:00</td>
+      <td>LONG</td>
+      <td>69078.4</td>
+      <td>2026-02-09 14:05:00+00:00</td>
+      <td>68561.0245</td>
+      <td>stop_loss</td>
+      <td>0.6055</td>
+      <td>-0.8690</td>
+    </tr>
+    <tr>
+      <td>2026-02-10 11:50:00+00:00</td>
+      <td>LONG</td>
+      <td>68517.8</td>
+      <td>2026-02-10 13:40:00+00:00</td>
+      <td>67871.8838</td>
+      <td>stop_loss</td>
+      <td>0.6627</td>
+      <td>-1.0627</td>
+    </tr>
+    <tr>
+      <td>2026-02-10 11:55:00+00:00</td>
+      <td>LONG</td>
+      <td>68494.2</td>
+      <td>2026-02-10 13:40:00+00:00</td>
+      <td>67883.3849</td>
+      <td>stop_loss</td>
+      <td>0.7694</td>
+      <td>-1.0118</td>
+    </tr>
+    <tr>
+      <td>2026-02-11 11:20:00+00:00</td>
+      <td>SHORT</td>
+      <td>66987.8</td>
+      <td>2026-02-11 12:20:00+00:00</td>
+      <td>67224.8769</td>
+      <td>stop_loss</td>
+      <td>0.6539</td>
+      <td>-0.4739</td>
+    </tr>
+    <tr>
+      <td>2026-02-11 14:10:00+00:00</td>
+      <td>SHORT</td>
+      <td>68325.3</td>
+      <td>2026-02-11 14:30:00+00:00</td>
+      <td>67177.5964</td>
+      <td>take_profit</td>
+      <td>0.7939</td>
+      <td>1.5598</td>
+    </tr>
+    <tr>
+      <td>2026-02-11 14:15:00+00:00</td>
+      <td>SHORT</td>
+      <td>68299.0</td>
+      <td>2026-02-11 14:30:00+00:00</td>
+      <td>67183.8109</td>
+      <td>take_profit</td>
+      <td>0.6868</td>
+      <td>1.5128</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
